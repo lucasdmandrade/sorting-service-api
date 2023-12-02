@@ -1,5 +1,5 @@
 import express, { Request, Response } from "express";
-import sortBooks from "./sortingService";
+import sortBooks from "./utils/sortBooks";
 
 const app = express();
 const port = 3000;

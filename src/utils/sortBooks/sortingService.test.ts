@@ -1,5 +1,5 @@
-import sortBooks, { SortingOptions } from "./";
-import orderBooksByIndexes from "../utils/mockArranger";
+import sortBooks, { SortingOptions } from ".";
+import orderBooksByIndexes from "../mockArranger";
 
 describe("SortingService", () => {
   beforeEach(() => {

@@ -1,4 +1,4 @@
-import books from "../mocks/books";
+import books from "../../mocks/books";
 
 export interface Book {
   title: string;

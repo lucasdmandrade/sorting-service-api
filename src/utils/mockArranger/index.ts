@@ -1,5 +1,5 @@
 import books from "../../mocks/books";
-import { Book } from "../../sortingService";
+import { Book } from "../sortBooks";
 
 const orderBooksByIndexes = (...indexes: number[]): Book[] | Error => {
   const maxIndex = books.length - 1;

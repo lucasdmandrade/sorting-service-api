@@ -15,16 +15,10 @@ const sortBooks = (options: SortingOptions): Book[] => {
       "descending" = 1,
     }
 
-    const direction = {
-      default: CompareDirection[options.direction],
-      inverted: CompareDirection[options.direction] * -1,
-    };
+    const firstBookSmaller =
+      bookA[options.attribute] < bookB[options.attribute] ? 1 : -1;
 
-    if (bookA[options.attribute] < bookB[options.attribute]) {
-      return direction.default;
-    }
-
-    return direction.inverted;
+    return firstBookSmaller * CompareDirection[options.direction];
   });
 };
 

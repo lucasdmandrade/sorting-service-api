@@ -9,9 +9,9 @@ app.use(express.json());
 
 app.post("/sort", (req: Request, res: Response) => {
   try {
-    const sortingOptions = JSON.parse(
-      fs.readFileSync(__dirname + "/sortingConfig.json", "utf-8")
-    );
+    const sortingOptions = !Object.keys(req.body).length
+      ? JSON.parse(fs.readFileSync(__dirname + "/sortingConfig.json", "utf-8"))
+      : req.body;
 
     const sortedBooks = sortBooks(sortingOptions);
 

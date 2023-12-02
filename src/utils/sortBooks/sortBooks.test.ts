@@ -1,7 +1,8 @@
-import sortBooks, { SortingOptions } from ".";
-import orderBooksByIndexes from "../mockArranger";
+import sortBooks from ".";
+import orderBooksByIndexes from "@/utils/mockArranger";
+import { SortingOptions } from "./types";
 
-describe("SortingService", () => {
+describe("sortBooks", () => {
   beforeEach(() => {
     jest.resetModules();
   });

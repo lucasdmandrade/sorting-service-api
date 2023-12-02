@@ -1,15 +1,6 @@
-import books from "../../mocks/books";
-
-export interface Book {
-  title: string;
-  author: string;
-  edition: number;
-}
-
-export interface SortingOptions {
-  attribute: keyof Book;
-  direction: "ascending" | "descending";
-}
+import books from "@/mocks/books";
+import { Book } from "@/types/Books";
+import { SortingOptions } from "./types";
 
 const sortBooks = (options: SortingOptions): Book[] => {
   if (!Object.keys(options).length) {
@@ -17,14 +8,23 @@ const sortBooks = (options: SortingOptions): Book[] => {
   }
 
   return [...books].sort((bookA, bookB) => {
-    const compareResult = options.direction === "ascending" ? 1 : -1;
+    if (bookA[options.attribute] === bookB[options.attribute]) return 0;
+
+    enum CompareDirection {
+      "ascending" = -1,
+      "descending" = 1,
+    }
+
+    const direction = {
+      default: CompareDirection[options.direction],
+      inverted: CompareDirection[options.direction] * -1,
+    };
+
     if (bookA[options.attribute] < bookB[options.attribute]) {
-      return -compareResult;
+      return direction.default;
     }
-    if (bookA[options.attribute] > bookB[options.attribute]) {
-      return compareResult;
-    }
-    return 0;
+
+    return direction.inverted;
   });
 };
 

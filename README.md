@@ -21,7 +21,7 @@ docker-compose up
 
 > Além de iniciar o servidor, o Docker também executará os testes.
 
-Após essa etapa, basta fazer chamadas ao endpoint que estará rodando localmente em `localhost:3000/sort`
+Após essa etapa, basta fazer chamadas ao endpoint: `localhost:3000/sort`
 
 > Lembre-se de ter o ambiente Docker configurado.
 > Para alterar os parâmetros de ordenação, você pode enviá-los como opções nas chamadas ou modificando o arquivo `sortingConfig.json`.

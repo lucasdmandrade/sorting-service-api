@@ -30,3 +30,7 @@ Após essa etapa, basta fazer chamadas ao endpoint: `localhost:3000/sort`
 ## Licença
 
 Este projeto é distribuído sob a licença [MIT](LICENSE). Sinta-se à vontade para personalizar e usar conforme necessário.
+
+## Explicação
+
+O teste 2 (should sort books by author in descending order) está falhando devido à configuração conforme as regras do documento. No entanto, suspeito que a ordem definida no documento pode estar incorreta. Recomendo revisar as instruções no documento de teste para garantir que a ordem esperada esteja corretamente definida.

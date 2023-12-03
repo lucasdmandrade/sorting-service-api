@@ -13,6 +13,6 @@ services:
     working_dir: /usr/src/app
     volumes:
       - .:/usr/src/app
-    command: yarn test
+    command: bash -c "yarn && yarn test"
     depends_on:
       - app

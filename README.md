@@ -11,15 +11,15 @@ git clone https://github.com/lucasdmandrade/sorting-service-api
 cd sorting-service-api
 ```
 
-### 2. Inicialize o com docker
+### 2. Inicialize com docker
 
 Inicialize o servidor com o Docker executando o seguinte comando:
-
-> Além de iniciar o servidor, o Docker também executará os testes.
 
 ```
 docker-compose up
 ```
+
+> Além de iniciar o servidor, o Docker também executará os testes.
 
 Após essa etapa, basta fazer chamadas ao endpoint que estará rodando localmente em `http://localhost:3000/sort`.
 

@@ -38,4 +38,7 @@ O teste 2 (should sort books by author in descending order) está falhando devid
 Caso deseje, coloquei a ordem que acredito ser correta comentada após a definição da `expectedOrder` no teste. Para isso, basta ir ao arquivo `src/utils/sortBooks/sortBooks.test.ts` e substituir o array na linha 24 (`const expectedOrder = [2, 1, 3, 0]`) pelo comentário à frente `//[3, 1, 0, 2]`"
 
 Assim, a linha ficará semelhante a essa:
-` const expectedOrder = [3, 1, 0, 2];`
+
+```
+const expectedOrder = [3, 1, 0, 2];
+```

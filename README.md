@@ -15,6 +15,8 @@ cd sorting-service-api
 
 Inicialize o servidor com o docker executando o seguinte comando:
 
+> Além de inicar o servidor o docker tambem executará os testes
+
 ```
 docker-compose up
 ```
@@ -23,30 +25,6 @@ Após essa etapa basta fazer chamadas ao endpoint que estará rodando localmente
 
 > Lembre-se de ter o ambiente docker configurado
 > Para alterar os parametros de ordenação é possivel mandar como options nas chamas ou alterando o arquivo `sortingConfig.json`
-
-### 3. Instale as Dependências
-
-> Opcional caso deseje rodar os testes ou fazer alterações locais
-
-Instale as dependências do projeto executando:
-
-```
-npm install
-```
-
-#### ou com Yarn
-
-```
-yarn
-```
-
-### 4. Testes
-
-Criei comandos para simplificar o processo de execução dos testes. Para rodar os testes, basta executar os seguintes comandos:
-
-```
-yarn test
-```
 
 ## Licença
 

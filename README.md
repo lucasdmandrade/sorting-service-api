@@ -4,7 +4,7 @@
 
 ### 1. Clone o Repositório
 
-Clone este repositório para o seu sistema executando o seguinte comando:
+Clone este repositório para o seu sistema e navegue para a pasta executando o seguinte comando:
 
 ```
 git clone https://github.com/lucasdmandrade/sorting-service-api
@@ -20,6 +20,7 @@ docker-compose up
 ```
 
 > Lembre-se de ter o ambiente docker configurado
+> Para alterar os parametros de ordenação é possivel mandar como options nas chamas ou alterando o arquivo `sortingConfig.json`
 
 ### 3. Instale as Dependências
 

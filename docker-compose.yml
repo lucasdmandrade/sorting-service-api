@@ -7,12 +7,4 @@ services:
       - .:/usr/src/app
     ports:
       - "3000:3000"
-    command: bash -c "yarn install && yarn start"
-  tests:
-    image: node:14
-    working_dir: /usr/src/app
-    volumes:
-      - .:/usr/src/app
-    command: bash -c "yarn && yarn test"
-    depends_on:
-      - app
+    command: bash -c "yarn install && yarn test && yarn start"

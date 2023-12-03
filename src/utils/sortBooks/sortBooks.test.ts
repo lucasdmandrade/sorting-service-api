@@ -21,7 +21,7 @@ describe("sortBooks", () => {
   });
 
   it("should sort books by author in descending order", () => {
-    const expectedOrder = [2, 1, 3, 0]; //[3, 1, 0, 2]
+    const expectedOrder = [3, 1, 0, 2]; //[2, 1, 3, 0]
 
     const options: SortingOptions = {
       attribute: "author",

@@ -1,4 +1,4 @@
-# Projeto Soting Service Api
+# Projeto Sorting Service Api
 
 ## Iniciando
 
@@ -11,7 +11,19 @@ git clone https://github.com/lucasdmandrade/sorting-service-api
 cd sorting-service-api
 ```
 
-### 2. Instale as Dependências
+### 2. Inicialize o com docker
+
+Após esse passo basta fazer chamadas ao endpoint que estará rodando localmente como `http://localhost:3000/sort`
+
+```
+docker-compose up
+```
+
+> Lembre-se de ter o ambiente docker configurado
+
+### 3. Instale as Dependências
+
+> Opcional caso deseje rodar os testes ou fazer alterações locais
 
 Instale as dependências do projeto executando:
 
@@ -24,16 +36,6 @@ npm install
 ```
 yarn
 ```
-
-### 3. Inicialize o com docker
-
-Siga as instruções do Expo CLI para iniciar o projeto de acordo com o sistema operacional do seu dispositivo ou emulador.
-
-```
-docker-compose up
-```
-
-> Lembre-se de ter o ambiente docker configurado
 
 ### 4. Testes
 

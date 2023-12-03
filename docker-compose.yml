@@ -8,3 +8,11 @@ services:
     ports:
       - "3000:3000"
     command: yarn start
+  tests:
+    image: node:14
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app
+    command: yarn test
+    depends_on:
+      - app

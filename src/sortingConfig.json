@@ -1,4 +1,4 @@
 {
-  "attribute": "edition",
-  "direction": "ascending"
+  "attribute": "author",
+  "direction": "descending"
 }

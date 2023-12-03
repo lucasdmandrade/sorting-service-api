@@ -25,7 +25,7 @@ Após essa etapa, basta fazer chamadas ao endpoint: `localhost:3000/sort`
 
 > Lembre-se de ter o ambiente Docker configurado.
 
-> Para alterar os parâmetros de ordenação, você pode enviá-los como opções nas chamadas ou modificando o arquivo `sortingConfig.json`.
+> Para alterar os parâmetros de ordenação, você pode enviá-los no body das chamadas ou modificando o arquivo `sortingConfig.json`. Os parâmetros do arquivo serão utilizados caso não sejam fornecidos no corpo da requisição.
 
 ## Licença
 

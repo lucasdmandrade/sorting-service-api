@@ -13,11 +13,13 @@ cd sorting-service-api
 
 ### 2. Inicialize o com docker
 
-Após esse passo basta fazer chamadas ao endpoint que estará rodando localmente como `http://localhost:3000/sort`
+Inicialize o servidor com o docker executando o seguinte comando:
 
 ```
 docker-compose up
 ```
+
+Após essa etapa basta fazer chamadas ao endpoint que estará rodando localmente como `http://localhost:3000/sort`
 
 > Lembre-se de ter o ambiente docker configurado
 > Para alterar os parametros de ordenação é possivel mandar como options nas chamas ou alterando o arquivo `sortingConfig.json`

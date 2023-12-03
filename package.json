@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node src/index.ts",
+    "start-test": "jest && ts-node src/index.ts ",
     "test": "jest",
     "docker-build": "docker build -t sorting-service .",
     "docker": "docker run -p 3000:3000 sorting-service"

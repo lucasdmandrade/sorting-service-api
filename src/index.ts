@@ -1,25 +1,12 @@
 import express, { Request, Response } from "express";
-import sortBooks from "./utils/sortBooks";
-import fs from "fs";
+import sortController from "@/controllers/sort";
 
 const app = express();
 const port = 3000;
 
 app.use(express.json());
 
-app.post("/sort", (req: Request, res: Response) => {
-  try {
-    const sortingOptions = !Object.keys(req.body).length
-      ? JSON.parse(fs.readFileSync(__dirname + "/sortingConfig.json", "utf-8"))
-      : req.body;
-
-    const sortedBooks = sortBooks(sortingOptions);
-
-    res.json(sortedBooks);
-  } catch (error: any) {
-    res.status(500).json({ error: error.message });
-  }
-});
+app.post("/sort", sortController);
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);

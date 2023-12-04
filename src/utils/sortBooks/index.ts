@@ -1,6 +1,6 @@
 import { Book } from "@/types/Books";
 import { SortingOptions } from "./types";
-import books from "../../mocks/books";
+import books from "@/mocks/books";
 
 const sortBooks = (options: SortingOptions): Book[] => {
   if (!Object.keys(options).length) {
